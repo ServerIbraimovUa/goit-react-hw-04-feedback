@@ -35,10 +35,10 @@ export default function Feedback() {
   const countPositiveFeedbackPercentage = () =>
     Math.round((good / countTotalFeedback()) * 100);
 
-  //основний рендер
   const keys = Object.keys(feedback);
   const totalCount = countTotalFeedback();
 
+  // рендер
   return (
     <Container>
       <h1>Please leave feedback</h1>
